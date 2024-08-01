@@ -1,36 +1,472 @@
 ---
-// Import your components here
-// import Header from '../components/Header.astro';
-import Coworking from './Coworking.astro';
-import Rates from './Rates.astro';
-import About from './About.astro';
-import Contact from './Contact.astro';
-import Layout from '../layouts/Layout.astro';
-// Import CSS
-// import '../styles/global.css';
+import Main from "../layouts/Main.astro"
+import FeatureBox from "../components/FeatureBox.astro"
+import Membership from "../components/Membership.astro"
+import Gallery from "../components/Gallery.astro"
+import Testimonials from "../components/Testimonials.astro"
+import Location from "../components/Location.astro"
+import ContactSection from "../components/ContactSection.astro"
 ---
+<Main title="CreativeLoft CoWorking Space">
+<section id="content">
+    <div class="content-wrap pt-3 pb-0">
+      <div class="section bg-transparent py-2">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7">
+              <h2 class="display-4 fw-semibold ls--2">
+                We are making better
+                <span
+                  class="text-rotater"
+                  data-separator="|"
+                  data-rotate="fadeIn"
+                  data-speed="2000"
+                >
+                  <span class="t-rotate"
+                    >Environment|Workspace|Coworking|Community</span
+                  >
+                </span>
+                for you.
+              </h2>
+            </div>
 
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Creative Lofts | HekaTek</title>
-    <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="/font-icons.css">
-    <link rel="stylesheet" href="/swiper.css">
-    <link rel="stylesheet" href="/coworking.css">
-    <link rel="stylesheet" href="/css/custom.css">
-</head>
-<body class="stretched">
-    <Layout>
-    <!-- <main> -->
-        <About />
-        <Rates />
-        <Coworking />
-        <Contact />
-    <!-- </main> -->
-</Layout>
-    <script src="/js/plugins.min.js" is:inline></script>
-    <script src="/js/functions.bundle.js" is:inline></script>
-</body>
-</html>
+            <div class="col-md-5">
+              <p class="lead text-muted">
+                Foster creativity and collaboration in a dynamic coworking environment. Embrace flexible workspaces designed for productivity and community.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="overflow-hidden parallax scroll-detect d-flex align-items-center"
+        style="height: 600px; width: 100%"
+      >
+        <img src="page/coworking/images/hero.jpg" class="parallax-bg" />
+
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <h2 class="text-white">
+                The Center is a network of 9 workspaces, from 200 to 3,700
+                sqft, Build and Designed to support Personal and Businesses
+                in the Creative World.
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-theme-light">
+        <div class="shadow-sm hero-features bg-color dark shadow">
+          <div class="row">
+            <div class="col-md-4 mt-3 mt-md-0">
+              <div class="feature-box fbox-plain fbox-sm fbox-dark mb-0">
+                <div class="fbox-icon">
+                  <i class="text-white bi-check-circle-fill"></i>
+                </div>
+
+                <div class="fbox-content">
+                  <h3 class="text-white">Easily Manage Your Works</h3>
+
+                  <p class="text-white mb-0">
+                    24x7 available, Anytime & anywhere, we're always
+                    available for You.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mt-3 mt-md-0">
+              <div class="feature-box fbox-plain fbox-sm fbox-dark mb-0">
+                <div class="fbox-icon">
+                  <i class="text-white bi-check-circle-fill"></i>
+                </div>
+
+                <div class="fbox-content">
+                  <h3 class="text-white">24x7 Access.</h3>
+
+                  <p class="text-white mb-0">
+                    Get Started with our Regular, Weekly, Monthly Plan.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mt-3 mt-md-0">
+              <div class="feature-box fbox-plain fbox-sm fbox-dark mb-0">
+                <div class="fbox-icon">
+                  <i class="text-white bi-check-circle-fill"></i>
+                </div>
+
+                <div class="fbox-content">
+                  <h3 class="text-white">Secured &amp; Friendly.</h3>
+
+                  <p class="text-white mb-0">
+                    Ensure quality and safety with a friendly atmosphere.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section mt-0 pt-md-5 pt-0">
+        <div class="container">
+          <div class="row align-items-md-center mb-5">
+            <div class="col-md-6 pe-5">
+              <div class="heading-block mb-4 border-bottom-0">
+                <div class="before-heading">Know More</div>
+
+                <h2 class="text-transform-none fw-semibold">
+                  Work Together, Build Together.
+                </h2>
+              </div>
+
+              <div class="row">
+                <div class="col-6 col-sm-6 mb-4">
+                  <div class="counter color fw-semibold">
+                    <span
+                      data-from="1"
+                      data-to="3"
+                      data-refresh-interval="2"
+                      data-speed="600"
+                    ></span
+                    >+
+                  </div>
+
+                  <h5 class="mt-0 fw-medium">Branches</h5>
+                </div>
+
+                <div class="col-6 col-sm-6 mb-4">
+                  <div class="counter color fw-semibold">
+                    <span
+                      data-from="1"
+                      data-to="37"
+                      data-refresh-interval="11"
+                      data-speed="900"
+                    ></span
+                    >+
+                  </div>
+
+                  <h5 class="mt-0 fw-medium">Single Studios</h5>
+                </div>
+
+                <div class="col-6 col-sm-6 mb-4">
+                  <div class="counter color fw-semibold">
+                    <span
+                      data-from="1"
+                      data-to="21"
+                      data-refresh-interval="3"
+                      data-speed="1000"
+                    ></span
+                    >+
+                  </div>
+
+                  <h5 class="mt-0 fw-medium">Events per Month</h5>
+                </div>
+
+                <div class="col-6 col-sm-6 mb-4">
+                  <div class="counter color fw-semibold">
+                    <span
+                      data-from="100"
+                      data-to="4500"
+                      data-refresh-interval="100"
+                      data-speed="1500"
+                    ></span
+                    >+
+                  </div>
+
+                  <h5 class="mt-0 fw-medium">Active Members</h5>
+                </div>
+              </div>
+
+              <p class="text-muted">
+                Join our thriving community with top-notch facilities, collaborative spaces, and a vibrant network of professionals.
+              </p>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+              <div class="card shadow-sm border-light">
+                <img
+                  src="page/coworking/images/features/3.jpg"
+                  alt="meeting room"
+                  class="card-img-top"
+                />
+
+                <div class="card-body">
+                  <h5 class="card-title fw-semibold color">
+                    Meeting Rooms
+                  </h5>
+
+                  <p class="card-text">
+                    Professional meeting spaces equipped for your business needs.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card shadow-sm border-light mt-4">
+                <img
+                  src="page/coworking/images/features/2.jpg"
+                  alt="private room"
+                  class="card-img-top"
+                />
+
+                <div class="card-body">
+                  <h5 class="card-title fw-semibold color">
+                    Private Rooms
+                  </h5>
+
+                  <p class="card-text">
+                    Comfortable, private spaces tailored for focused work.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 ps-sm-3 mt-3 mt-sm-0">
+              <div class="card shadow-sm border-light">
+                <img
+                  src="page/coworking/images/features/1.jpg"
+                  alt="coworking space gallery"
+                  class="card-img-top"
+                />
+
+                <div class="card-body">
+                  <p class="card-text">
+                    Explore our gallery to see the inspiring spaces our members enjoy.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <FeatureBox />
+    <Membership />
+    <Gallery />
+    <Testimonials />
+
+    <div class="section bg-transparent" style="padding: 80px 0">
+        <div class="container">
+          <div class="row justify-content-between align-items-center">
+            <div class="col-lg-8 col-md-10 offset-lg-2 offset-md-1 mb-6">
+              <a
+                href="https://www.youtube.com"
+                data-lightbox="iframe"
+                class="play-video position-relative"
+                ><img
+                  src="page/coworking/images/video-bg.jpg"
+                  alt="Video Image"
+                  class="rounded-3 shadow-lg"
+                />
+
+                <i class="bi-play"></i>
+              </a>
+            </div>
+
+            <div class="col-lg-5 col-md-6 mt-0 mt-md-4">
+              <div class="feature-box fbox-plain fbox-sm">
+                <div class="fbox-icon">
+                  <i class="bi-magic"></i>
+                </div>
+
+                <div class="fbox-content">
+                  <h3>Easily Manage Your Works</h3>
+
+                  <p>
+                    Efficiently streamline your workflow with our intuitive tools and features. Seamlessly coordinate projects with your team.
+                  </p>
+                </div>
+              </div>
+
+              <div class="feature-box fbox-plain fbox-sm">
+                <div class="fbox-icon">
+                  <i class="bi-clock"></i>
+                </div>
+
+                <div class="fbox-content">
+                  <h3>24x7 Access</h3>
+
+                  <p>
+                    Enjoy uninterrupted access to our coworking space around the clock. Work at your convenience, day or night.
+                  </p>
+                </div>
+              </div>
+
+              <div class="feature-box fbox-plain fbox-sm mb-0">
+                <div class="fbox-icon">
+                  <i class="bi-chat-left-text"></i>
+                </div>
+
+                <div class="fbox-content">
+                  <h3>Great Community</h3>
+
+                  <p>
+                    Engage with a vibrant community of like-minded professionals. Collaborate, network, and share innovative ideas.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-5 col-md-6 mt-5 mt-md-0">
+              <h2 class="ls-0">Get Your One Day Free Trial.</h2>
+
+              <p class="text-muted mb-5" style="font-size: 18px">
+                Experience our coworking space with a free day trial. Discover all our facilities and services in a welcoming environment.
+              </p>
+
+              <div class="d-flex">
+                <a
+                  href="demo-coworking-single.html"
+                  class="button button-rounded button-xlarge d-block flex-fill m-0 text-center text-transform-none fw-semibold ls-0"
+                  >Sign Up</a
+                >
+
+                <a
+                  href="demo-coworking-contact.html"
+                  class="button button-rounded button-xlarge d-block flex-fill button-border m-0 ms-3 text-center text-transform-none fw-semibold ls-0"
+                  >Contact Us</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="line"></div>
+      <Location />
+      
+      <div class="section bg-transparent">
+        <div class="container">
+          <div class="heading-block border-bottom-0 text-center">
+            <div class="before-heading">See What's Up in Latest</div>
+
+            <h2 class="text-transform-none fw-semibold">
+              News &amp; Events
+            </h2>
+          </div>
+
+          <div class="clear"></div>
+
+          <div class="row col-mb-30 posts-md">
+            <div class="col-md-4">
+              <article class="entry">
+                <div class="entry-title title-xs text-transform-none">
+                  <h3>
+                    <a href="#">A Meetup for E-Commerce Owners </a>
+                  </h3>
+                </div>
+
+                <div class="entry-content">
+                  <p>
+                    Join us for a dynamic meetup focused on e-commerce strategies. Connect with industry leaders and explore innovative approaches.
+                  </p>
+                </div>
+
+                <div class="author-meta d-flex align-items-center">
+                  <div class="author-image square square-md me-3">
+                    <img
+                      src="page/articles/images/authors/1.jpg"
+                      alt="Author Image"
+                      class="rounded-circle"
+                    />
+                  </div>
+
+                  <div class="entry-meta no-separator">
+                    <ul class="flex-column mb-0">
+                      <li class="mb-1">
+                        <span>By</span> <a href="#">Hanson Deck</a>
+                      </li>
+
+                      <li><a href="#">May 13, 2024</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-md-4">
+              <article class="entry">
+                <div class="entry-title title-xs text-transform-none">
+                  <h3>
+                    <a href="#"
+                      >Creating Your Own Demand as a Digital Nomad</a
+                    >
+                  </h3>
+                </div>
+
+                <div class="entry-content">
+                  <p>
+                    Learn how to build demand and thrive as a digital nomad. Gain insights into managing your career while traveling.
+                  </p>
+                </div>
+
+                <div class="author-meta d-flex align-items-center">
+                  <div class="author-image square square-md me-3">
+                    <img
+                      src="page/articles/images/authors/2.jpg"
+                      alt="Author Image"
+                      class="rounded-circle"
+                    />
+                  </div>
+
+                  <div class="entry-meta no-separator mb-0">
+                    <ul class="flex-column mb-0">
+                      <li class="mb-1">
+                        <span>By</span> <a href="#">Hanson Deck</a>
+                      </li>
+
+                      <li><a href="#">Mar 11, 2024</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-md-4">
+              <article class="entry">
+                <div class="entry-title title-xs text-transform-none">
+                  <h3>
+                    <a href="#"
+                      >Succeeding Remotely Within A Stateside Team</a
+                    >
+                  </h3>
+                </div>
+
+                <div class="entry-content">
+                  <p>
+                    Discover strategies for remote success while working with teams based in the U.S. Enhance your productivity and collaboration.
+                  </p>
+                </div>
+
+                <div class="author-meta d-flex align-items-center">
+                  <div class="author-image square square-md me-3">
+                    <img
+                      src="page/articles/images/authors/3.jpg"
+                      alt="Author Image"
+                      class="rounded-circle"
+                    />
+                  </div>
+
+                  <div class="entry-meta no-separator mb-0">
+                    <ul class="flex-column mb-0">
+                      <li class="mb-1">
+                        <span>By</span> <a href="#">Hanson Deck</a>
+                      </li>
+
+                      <li><a href="#">Apr 23, 2024</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ContactSection />
+    </div>
+</section>
+</Main>

@@ -71,8 +71,8 @@ import Layout from '../layouts/Layout.astro'; // Assume a layout that handles th
                             <div id="logo">
                                 <a href="/demo-coworking">
                                     <!-- Use Astro optimized image components if necessary -->
-                                    <img class="logo-default" src="/demos/coworking/images/logo.png" alt="Canvas Logo" width="auto" height="50">
-                                    <img class="logo-sticky" src="/demos/coworking/images/logo-sticky.png" alt="Canvas Logo" width="auto" height="50">
+                                    <img class="logo-default" src="/page/coworking/images/logo.png" alt="Canvas Logo" width="auto" height="50">
+                                    <img class="logo-sticky" src="/page/coworking/images/logo-sticky.png" alt="Canvas Logo" width="auto" height="50">
                                 </a>
                             </div>
                             <div class="header-misc">
