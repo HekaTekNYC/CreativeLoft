@@ -1,18 +1,22 @@
-import { defineConfig } from 'astro/config';
+import {defineConfig} from "astro/config"
 
-// https://astro.build/config
 export default defineConfig({
-    resolve: {
-      alias: {
-        js: "js/",
+  resolve: {
+    alias: {
+      js: "js/",
+    },
+  },
+  buildOptions: {
+    minify: true,
+  },
+  devToolbar: {
+    enabled: false,
+  },
+  vite: {
+    build: {
+      rollupOptions: {
+        external: id => /node_modules/.test(id),
       },
     },
-    buildOptions: {
-      minify: true,
-    },
-  
-    devToolbar: {
-      enabled: false,
-    },
-  })
-  
+  },
+})
