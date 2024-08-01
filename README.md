@@ -52,3 +52,76 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+--
+// Define the Astro component here
+import Layout from '../layouts/Layout.astro'; // Assume a layout that handles the header and footer
+
+---
+
+<Layout title="Contact - Coworking | Canvas">
+    <div class="section mb-0 pb-0 bg-theme-light" style="padding-top: 120px;">
+        <!-- <div class="container"> -->
+    <body class="stretched">
+        <div id="wrapper">
+            <header id="header" class="border-bottom-0" data-sticky-shrink="false">
+                <div id="header-wrap">
+                    <div class="container">
+                        <div class="header-row">
+                            <div id="logo">
+                                <a href="/demo-coworking">
+                                    <!-- Use Astro optimized image components if necessary -->
+                                    <img class="logo-default" src="/demos/coworking/images/logo.png" alt="Canvas Logo" width="auto" height="50">
+                                    <img class="logo-sticky" src="/demos/coworking/images/logo-sticky.png" alt="Canvas Logo" width="auto" height="50">
+                                </a>
+                            </div>
+                            <div class="header-misc">
+                                <a class="top-phone" href="tel:800-234-5324">
+                                    <i class="fa-solid fa-phone"></i> <span class="d-none d-md-inline-block">(800) 234-5324</span>
+                                </a>
+                            </div>
+                            <div class="primary-menu-trigger">
+                                <button class="cnvs-hamburger" type="button" title="Open Mobile Menu">
+                                    <span class="cnvs-hamburger-box"><span class="cnvs-hamburger-inner"></span></span>
+                                </button>
+                            </div>
+                            <nav class="primary-menu">
+                                <ul class="menu-container">
+                                    <li class="menu-item"><a class="menu-link" href="/demo-coworking"><div>Home</div></a></li>
+                                    <li class="menu-item"><a class="menu-link" href="/demo-coworking-about"><div>About Us</div></a></li>
+                                    <li class="menu-item"><a class="menu-link" href="/demo-coworking-price"><div>Rates</div></a></li>
+                                    <li class="menu-item"><a class="menu-link" href="/demo-coworking-single"><div>Single</div></a></li>
+                                    <li class="menu-item current"><a class="menu-link" href="/demo-coworking-contact"><div>Contact Us</div></a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <section id="content">
+                <div class="content-wrap pb-0">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-md-7">
+                                <h2 class="display-4 text-dark fw-semibold ls--2 mb-3">Contact Us</h2>
+                                <p class="text-dark">Progressively syndicate user-centric schemas without front-end synergy. Monotonectally envisioneer.</p>
+                                <div class="form-widget mt-5">
+                                    <form class="mb-0" id="template-contactform" name="template-contactform" method="post">
+                                        <!-- Form fields go here -->
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Additional sections can be included here -->
+                </div>
+            </section>
+            <footer id="footer" class="border-0" style="background-color: #155BBC; padding-top: 40px">
+                <!-- Footer content -->
+            </footer>
+        </div>
+        </div>
+        <!-- </div> -->
+        <div id="gotoTop" class="uil uil-angle-up"></div>
+    </body>
+</Layout>
